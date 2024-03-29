@@ -38,7 +38,7 @@ const Header = () => {
                   href={nav.href}
                   key={nav.label}
                   className={clsx(
-                    "text-slate-500",
+                    "text-slate-500 hover:text-purple-400 ",
                     isSelected && "text-purple-400"
                   )}
                 >
