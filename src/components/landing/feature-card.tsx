@@ -12,7 +12,7 @@ const FeatureCard = ({ img, className, header, text }: FeatureProps) => {
   return (
     <div
       className={clsx(
-        "bg-slate-800/50 backdrop-blur-lg border rounded-xl p-4 flex gap-4",
+        "bg-slate-800/50 backdrop-blur-lg border rounded-xl p-4 flex gap-4 z-10",
         className
       )}
     >

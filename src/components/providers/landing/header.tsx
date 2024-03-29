@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="">
       <div className="px-14 py-2 flex items-center justify-between">
-        <div className="flex items-center gap-1">
+        <Link href="/" className="flex items-center gap-1">
           <Image
             src={neura}
             alt="neura-logo"
@@ -25,7 +25,7 @@ const Header = () => {
           <h1 className="text-2xl font-bold">
             Neura<span className="text-sm">.ai</span>
           </h1>
-        </div>
+        </Link>
 
         <div className="flex items-center gap-6">
           <nav className="hidden items-center gap-4 md:flex">
@@ -48,12 +48,15 @@ const Header = () => {
             })}
           </nav>
           <div>
-            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-400">
+            <Link
+              href="/login"
+              className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-400"
+            >
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                 Get started
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
