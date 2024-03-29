@@ -15,7 +15,7 @@ export const NAV_LINKS = [
   },
   {
     label: "Pricing",
-    href: "/pricing",
+    href: "#pricing",
   },
 ];
 

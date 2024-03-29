@@ -6,7 +6,7 @@ import FeatureCard from "./feature-card";
 
 const Features = () => {
   return (
-    <Section className="mt-12">
+    <Section className="mt-12" id="features">
       <h1 className="text-4xl font-bold">Why create agents</h1>
       <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-x-12 lg:gap-x-16 ">
         <FeatureCard

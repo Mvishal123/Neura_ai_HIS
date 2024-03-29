@@ -12,7 +12,7 @@ const Hero = () => {
             alt="gradient"
             height={1417}
             width={1417}
-            className="absolute left-0 top-0 h-[700px] w-screen -translate-x-32 -translate-y-20 -z-50 blur-xl opacity-20"
+            className="absolute left-0 top-0 h-[500px] ]md:h-[700px] w-screen -translate-x-32 -translate-y-20 -z-50 blur-xl opacity-20"
           />
           Why waste time when you can{" "}
           <span className="custom-pink-gradient bg-clip-text text-transparent">

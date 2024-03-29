@@ -84,3 +84,7 @@
 }
 
 
+* {
+  scroll-behavior: smooth;
+}
+
