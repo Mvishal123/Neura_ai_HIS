@@ -9,7 +9,7 @@ const Pricing = () => {
       <h1 className="text-2xl md:text-4xl font-bold">Pricing</h1>
       <div className="mt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12">
         {PRICING_DETAILS.map((plan) => (
-            <PricingCard data={plan}/>
+          <PricingCard data={plan} key={plan.type} />
         ))}
       </div>
     </Section>

@@ -32,10 +32,7 @@ const PricingCard = ({ data }: PriceCardProps) => {
         <Button
           variant="ghost"
           size="sm"
-          className={`w-full bg-purple-900 ${
-            (type === "pro" || type === "custom") &&
-            "bg-gradient-to-b from-purple-600 to-purple-300"
-          }`}
+          className={`w-full bg-gradient-to-b from-purple-600 to-purple-300 `}
         >
           {type === "free"
             ? "Get started"
@@ -45,8 +42,8 @@ const PricingCard = ({ data }: PriceCardProps) => {
         </Button>
       </div>
       <div className="space-y-3">
-        {data.features.map((feat) => (
-          <div className="flex gap-2">
+        {data.features.map((feat, index) => (
+          <div className="flex gap-2" key={index}>
             <div className="p-1 bg-purple-600 h-5 w-5 flex justify-center items-center rounded-full">
               <Check className="" />
             </div>
