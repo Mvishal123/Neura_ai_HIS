@@ -1,3 +1,5 @@
+import { finance } from "@/assets";
+
 export const NAV_LINKS = [
   {
     label: "About",
@@ -16,3 +18,5 @@ export const NAV_LINKS = [
     href: "/pricing",
   },
 ];
+
+// Feature cards
