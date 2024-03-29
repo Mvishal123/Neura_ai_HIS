@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div className="">
-      <div className="px-14 py-2 flex items-center justify-between">
+      <div className="px-4 md:px-14 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-1">
           <Image
             src={neura}
