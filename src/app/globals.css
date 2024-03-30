@@ -75,16 +75,14 @@
   }
 
   .custom-pink-gradient {
-    @apply bg-gradient-to-r from-fuchsia-600 to-pink-600
+    @apply bg-gradient-to-r from-fuchsia-600 to-pink-600;
   }
 
   .custom-purple-gradient {
-    @apply bg-gradient-to-r from-fuchsia-600 to-purple-600 
+    @apply bg-gradient-to-r from-fuchsia-600 to-purple-600;
   }
 }
-
 
 * {
   scroll-behavior: smooth;
 }
-

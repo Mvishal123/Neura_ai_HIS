@@ -48,14 +48,14 @@ const MainHeader = () => {
 
         <div className="hidden sm:flex items-center gap-6">
           <nav className="flex items-center gap-4">
-            {MAIN_NAV_LINKS.map((item) => {
+            {MAIN_NAV_LINKS.map((item, index) => {
               const isSelected = pathname
                 .split("/")
                 .includes(item.label.toLowerCase());
 
               return (
                 <Link
-                  key={item.label}
+                  key={index}
                   href={item.href}
                   className={clsx(
                     " hover:text-purple-400 ",
@@ -97,8 +97,9 @@ const MainHeader = () => {
             <SheetContent className="w-[250px]">
               <div className="py-6 px-3 flex flex-col justify-between h-full">
                 <div className="flex flex-col gap-4">
-                  {MAIN_NAV_LINKS.map((item) => (
-                    <Link
+                  {MAIN_NAV_LINKS.map((item, index) => (
+                    <Link 
+                      key={index}
                       href={item.href}
                       className="text-slate-300 hover:text-purple-400 text-xl"
                     >

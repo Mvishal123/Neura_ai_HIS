@@ -21,3 +21,10 @@ export const SignUpFormSchema = z
     message: "Passwords don't match.",
     path: ["confirmPassword"],
   });
+
+// Prompt for crew creation
+export const PromptFormSchema = z.object({
+  prompt: z.string().min(16, {
+    message: "Please elaborate more",
+  }),
+});
