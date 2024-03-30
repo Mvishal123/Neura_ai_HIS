@@ -19,6 +19,17 @@ export const NAV_LINKS = [
   },
 ];
 
+export const MAIN_NAV_LINKS = [
+  {
+    label: "Create",
+    href: "/create",
+  },
+  {
+    label: "Marketplace",
+    href: "/marketplace",
+  },
+];
+
 export const PRICING_DETAILS = [
   {
     type: "Free",
@@ -47,10 +58,6 @@ export const PRICING_DETAILS = [
     type: "Custom",
     price: "Contact us",
     sub: "For enterprises",
-    features: [
-      "unlimited credits",
-      "unlimited crew models",
-      "24/7 support",
-    ],
+    features: ["unlimited credits", "unlimited crew models", "24/7 support"],
   },
 ];
