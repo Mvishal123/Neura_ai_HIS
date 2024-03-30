@@ -119,10 +119,10 @@ const Page = () => {
           <h2 className="text-2xl font-semibold mb-4">Agent Workshop</h2>
           <ResizablePanelGroup
             direction="horizontal"
-            className="rounded overflow-auto shadow-2xl shadow-purple-400"
+            className="rounded overflow-aut"
           >
             <ResizablePanel
-              className="min-h-[350px] border-2 bg-slate-900 shadow-inner"
+              className="min-h-[350px] border-2 bg-slate-900  shadow-inner shadow-purple-400"
               defaultSize={10}
             >
               <div className="p-6">
@@ -157,16 +157,16 @@ const Page = () => {
             <ResizableHandle withHandle />
             <ResizablePanel
               defaultSize={10}
-              className="min-h-[100px] border-2 bg-slate-900"
+              className="min-h-[100px] border-2 bg-slate-900 shadow-inner shadow-purple-400"
             >
               <div className="flex h-full items-center justify-center p-6"></div>
             </ResizablePanel>
           </ResizablePanelGroup>
 
-          <ResizablePanelGroup direction="horizontal" className="rounded shadow-lg shadow-purple-400">
+          <ResizablePanelGroup direction="horizontal" className="rounded">
             <ResizablePanel
               defaultSize={10}
-              className="min-h-[100px] border-2 bg-slate-900 shadow-inner"
+              className="min-h-[100px] border-2 bg-slate-900 shadow-inner shadow-purple-400"
             >
               <div className="flex h-full items-center justify-center">
                 {!consoleReady && (
@@ -184,13 +184,13 @@ const Page = () => {
             <ResizableHandle withHandle />
             <ResizablePanel
               defaultSize={10}
-              className="min-h-[100px] border-2 bg-slate-900 shadow-inner relative"
+              className="min-h-[100px] border-2 bg-slate-900 shadow-inner relative shadow-purple-400"
             >
               <div className="p-2 h-full">
                 {!outputSuccess && (
                   <>
-                    <div className="absolute bg-slate-600/50 blur-3xl w-full h-full top-0 flex justify-center items-center z-0" />
-                    <h1 className="h-full flex justify-center items-center text-white relative z-10 font-bold text-xl">
+                    <div className="absolute  w-full h-full top-0 flex justify-center items-center " />
+                    <h1 className="h-full flex justify-center items-center text-white  font-bold text-xl blur-sm">
                       Building...
                     </h1>
                   </>
@@ -200,9 +200,11 @@ const Page = () => {
             </ResizablePanel>
           </ResizablePanelGroup>
         </Section>
+
+        {/* ---------------------------------------------------------------------------------------------------------------------------------- */}
         {/* smaller devices */}
         <Section className="px-12 lg:hidden mt-6 space-y-2">
-          <div className="min-h-[100px] border-2 bg-slate-900 shadow-inner rounded">
+          <div className="min-h-[100px] border-2 bg-slate-900 shadow-inner shadow-purple-400 rounded">
             <div className="p-3">
               <div className="mt-4">
                 <h1 className="text-sm mb-2 font-semibold">Prompt:</h1>
