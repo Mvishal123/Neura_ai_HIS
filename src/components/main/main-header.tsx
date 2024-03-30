@@ -28,6 +28,8 @@ import {
 
 const MainHeader = () => {
   const pathname = usePathname();
+  // console.log(pathname.split("/").includes("Create".toLowerCase()));
+
   return (
     <header className="h-14">
       <Section className="flex items-center justify-between">
@@ -50,12 +52,14 @@ const MainHeader = () => {
               const isSelected = pathname
                 .split("/")
                 .includes(item.label.toLowerCase());
+
               return (
                 <Link
+                  key={item.label}
                   href={item.href}
                   className={clsx(
-                    "text-slate-500 hover:text-purple-400 ",
-                    isSelected && "text-purple-400"
+                    " hover:text-purple-400 ",
+                    isSelected ? "text-purple-400" : "text-slate-500"
                   )}
                 >
                   {item.label}

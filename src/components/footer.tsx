@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <Section className="py-3 h-20 border-t mt-24 ">
+    <Section className="py-3 h-20 border-t mt-40">
       <div className="flex justify-between items-center">
         <div className="flex items-center ">
           <Image
